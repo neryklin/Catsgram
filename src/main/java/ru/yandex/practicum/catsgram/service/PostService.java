@@ -43,7 +43,7 @@ public class PostService {
         return posts.values();
     }
 
-    public Optional<Post> findById(int postId) {
+    public Optional<Post> findById(long postId) {
         return posts.values().stream()
                 .filter(o -> o.getId()==postId)
                 .findFirst();
